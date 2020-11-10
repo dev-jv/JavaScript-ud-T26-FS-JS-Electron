@@ -1,0 +1,29 @@
+{
+  "name": "fullstack-api",
+  "version": "1.0.0",
+  "description": "Backend en Mongo y Express",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-jv/JavaScript-ud-T24-FS-JS-Express-Node-MongoDB.git"
+  },
+  "author": "dev-jv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-jv/JavaScript-ud-T24-FS-JS-Express-Node-MongoDB/issues"
+  },
+  "homepage": "https://github.com/dev-jv/JavaScript-ud-T24-FS-JS-Express-Node-MongoDB#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
+
+
+
