@@ -17,6 +17,7 @@ exports.nuevoCliente = async (req, res, next) => {
     }
 }
 
+// obtiene todos los pacientes
 exports.obtenerPacientes = async (req, res, next) => {
     try {
         const pacientes = await Paciente.find({});
@@ -26,4 +27,17 @@ exports.obtenerPacientes = async (req, res, next) => {
         next();
     }
 }
+
+// obtine un paciente especifico por su id
+exports.obtenerPaciente = async (req, res, next) => {
+    try {
+        const paciente = await Paciente.findById(req.params.id);
+        res.json(paciente);
+    } catch (error) {
+        console.log(error);
+        next();
+    }
+}
+
+
 
