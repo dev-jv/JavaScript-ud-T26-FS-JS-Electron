@@ -18,7 +18,7 @@ mongoose.connect('mongodb://localhost/veterinaria', {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-// Habliltar routing - middlewares express
+// Habilitar routing - middlewares express
 app.use('/', routes())
 
 // puerto y arrancar el servidor
