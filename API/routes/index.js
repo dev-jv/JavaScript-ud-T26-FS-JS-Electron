@@ -15,9 +15,14 @@ module.exports = function() {
     );
 
     // Obtiene un paciente en especifico
-    router.get('/*pacientes/:id', 
+    router.get('/pacientes/:id', 
         pacienteController.obtenerPaciente
-    )
+    );
+
+    // Actualizar un registro con un ID especifico
+    router.put('/pacientes/:id', 
+        pacienteController.actualizarPaciente
+    );
 
     return router;
 }
