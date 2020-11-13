@@ -43,7 +43,7 @@ const NuevaCita = (props) => {
 
 
     return ( 
-    // <h1>Desde Nueva Cita</h1> 
+        // <h1>Desde Nueva Cita</h1> 
         <Fragment>
             <h1 className="my-5">Crear nueva cita</h1>
             <div className="container mt-5 py-5">

@@ -65,13 +65,12 @@ function App() {
 
             return (
               <Cita 
-                cita={cita[0]
+                cita={cita[0]}
               />
             )
           }}
         />
       </Switch>
-
     </Router>
   );
 }
