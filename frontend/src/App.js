@@ -13,23 +13,32 @@ function App() {
 
   // State de la app
   const [citas, guardarCitas] = useState([]);
+  const [consultar, guardarConsultar] = useState(true);
 
   useEffect( () => {
     // console.log('desde useEffect');
-    const consultarAPI = () => {
-      clienteAxios.get('/pacientes')
-        .then(respuesta => {
-          // console.log(respuesta.data)
-          guardarCitas(respuesta.data);
-        })
-        .catch(error => {
-          console.log(error);
-        })
+    if(consultar) {
+      const consultarAPI = () => {
+        clienteAxios.get('/pacientes')
+          .then(respuesta => {
+            // console.log(respuesta.data)
+
+            // Colocar en el state el resultado
+            guardarCitas(respuesta.data);
+
+            // Deshabilitar la consulta
+            guardarConsultar(false);
+
+          })
+          .catch(error => {
+            console.log(error);
+          })
+      }
+  
+      consultarAPI();
     }
 
-    consultarAPI();
-
-  }, [] );
+  }, [consultar] );
 
   return (
     <Router>
@@ -37,13 +46,13 @@ function App() {
         <Route 
           exact 
           path="/"
-          component={() => <Pacientes citas={citas}/>}
+          component={() => <Pacientes citas={citas} />}
         />
 
         <Route 
           exact 
           path="/nueva"
-          component={NuevaCita}
+          component={() => <NuevaCita guardarConsultar={guardarConsultar} />}
         />
 
         <Route 
