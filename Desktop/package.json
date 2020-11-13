@@ -1,0 +1,22 @@
+{
+  "name": "fullstack-desktop",
+  "version": "1.0.0",
+  "description": "Aplicación de Electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-jv/JavaScript-ud-T26-FS-JS-Electron.git"
+  },
+  "author": "dev-jv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-jv/JavaScript-ud-T26-FS-JS-Electron/issues"
+  },
+  "homepage": "https://github.com/dev-jv/JavaScript-ud-T26-FS-JS-Electron#readme",
+  "devDependencies": {
+    "electron": "^10.1.5"
+  }
+}
