@@ -19,7 +19,8 @@ function App() {
     const consultarAPI = () => {
       clienteAxios.get('/pacientes')
         .then(respuesta => {
-          console.log(respuesta)
+          // console.log(respuesta.data)
+          guardarCitas(respuesta.data);
         })
         .catch(error => {
           console.log(error);
