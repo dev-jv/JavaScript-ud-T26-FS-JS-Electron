@@ -7,10 +7,11 @@ function crearVentana() {
         width: 800,
         height: 850,
         // resizable: false
-        minWidth: 800,
-        minHeight: 600,
-        center: true,
-        show: false
+        minWidth: 800, 
+        minHeight: 600, 
+        center: true, 
+        show: false, 
+        icon: 'icon.png' 
     });
 
     // Cuando la aplicacion es cerrada

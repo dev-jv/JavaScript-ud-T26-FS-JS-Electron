@@ -4,7 +4,8 @@
   "description": "Aplicación de Electron",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder -w"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/dev-jv/JavaScript-ud-T26-FS-JS-Electron#readme",
   "devDependencies": {
-    "electron": "^10.1.5"
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1"
   }
 }
